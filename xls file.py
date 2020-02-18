@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 from datetime import datetime
-from aaa.names import names
+from names import names
 import xlsxwriter
-from aaa.akcje_dalej import result1
-from aaa.akcje_na_elementach import result2
+from akcje_dalej import result1
+from akcje_na_elementach import result2
 
 
 workbook = xlsxwriter.Workbook("../aaa/Excel.xlsx")

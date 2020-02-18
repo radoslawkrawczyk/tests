@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 from logging import exception
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-from aaa.names import names
+from names import names
 
 
 def actions():
