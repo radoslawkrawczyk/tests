@@ -5,7 +5,6 @@ import xlsxwriter
 from akcje_dalej import result1
 from akcje_na_elementach import result2
 
-
 workbook = xlsxwriter.Workbook("./Excel.xlsx")
 worksheet = workbook.add_worksheet()
 bold = workbook.add_format({'bold': 'true', 'font_color': '008000'})
@@ -36,8 +35,7 @@ for date, number, names, result in expenses:
     worksheet.write(row, col + 1, number)
     worksheet.write(row, col + 2, names)
     worksheet.write(row, col + 3, result)
-
-row += 1
+    row += 1
 
 print("-Plik wygenerowano")
 workbook.close()
