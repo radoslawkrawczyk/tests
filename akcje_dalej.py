@@ -8,7 +8,7 @@ from names import names
 
 def actions():
     driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get("file:///C:/Users/Użytkownik/Desktop/Selenium%20kurs/Test.html")
+    driver.get("./Test.html")
     driver.maximize_window()
     driver.implicitly_wait(10)
     driver.find_element_by_id("newPage").click()
@@ -33,7 +33,7 @@ try:
     actions()
     result1 = "Passed"
 
-except exception as e:
+except Exception as e:
     result1 = "Failed - " + str(e)
 
 action = names[0] + " - " + result1

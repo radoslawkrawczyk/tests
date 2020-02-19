@@ -6,7 +6,7 @@ from akcje_dalej import result1
 from akcje_na_elementach import result2
 
 
-workbook = xlsxwriter.Workbook("../aaa/Excel.xlsx")
+workbook = xlsxwriter.Workbook("./Excel.xlsx")
 worksheet = workbook.add_worksheet()
 bold = workbook.add_format({'bold': 'true', 'font_color': '008000'})
 

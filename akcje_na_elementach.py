@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from webdriver_manager.chrome import ChromeDriverManager
 
-from aaa.names import names
+from names import names
 
 
 def elements():
@@ -47,7 +47,7 @@ try:
     elements()
     result2 = "Passed"
 
-except exception as e:
+except Exception as e:
     result2 = "Failed - " + str(e)
 
 element = names[1] + " - " + result2
