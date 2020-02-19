@@ -10,7 +10,7 @@ from names import names
 
 def elements():
     driver = webdriver.Chrome(ChromeDriverManager().install())  # instalujemy webdriver
-    driver.get("file:///C:/Users/Użytkownik/Desktop/Selenium%20kurs/Test.html")  # metoda 'get' słuzy do szukania strony
+    driver.get("./Test.html")  # metoda 'get' słuzy do szukania strony
     driver.maximize_window()
     driver.implicitly_wait(10)   # czeka na znalezienie elementow tyle sekund
 
